@@ -470,6 +470,7 @@ body {
     width: 24%;
     margin-left: 1%;
     color: #888;
+    cursor: pointer;
 }
 
 @media (max-width: 576px) {
@@ -489,12 +490,13 @@ body {
 
 .our-team .the-team .person:hover img {
     filter: none;
-    -webkit-filter: grayscale(0) ;
+    -webkit-filter: grayscale(0);
+    box-shadow: 15px 7px 1px #cccc;
+    margin-top: 1px;
 }
 
 .our-team .the-team .person:hover {
     color: #555;
-    margin-top: 10px;
 }
 
 .our-team .the-team .social-icons i {
@@ -641,26 +643,31 @@ body {
     float: right;
 }
 
-.fa-chevron-up {
-    border-radius: 50%;
+
+#scroll {
+    background-color:#fff;
+    border:1px solid;
+    border-radius:50%;
+    height:40px;
+    position:fixed;
+    right:20px;
+    bottom:10px;
+    line-height: 15px;
+    display:none;
     padding: 12px;
     float: right;
-    margin-right: -100px;
-    background-color: #aca3a3;
-    border: 1px solid #aca3a3;
     cursor: pointer;
     font-size: x-large;
-    margin-top: -12px;
+    z-index: 9;
 }
 
 @media (max-width: 576px) {
-    .fa-chevron-up {
-        margin-right: 190px;
-        margin-top: -20px;
+    #scroll {
+        font-size: medium;
     }
 }
 
-.fa-chevron-up:hover {
+#scroll:hover {
     background-color: #ff0000;
     border: 1px solid #FF0000;
 }

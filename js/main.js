@@ -43,6 +43,23 @@ $(function () {
         }, 1000);
     });
 
+    var scroll = document.getElementById("scroll");
+            window.onscroll = function ()
+            {
+            if(window.pageYOffset >= 30)
+                {
+                scroll.style.display="block";
+                }
+            else
+                {
+                scroll.style.display="none";
+                }
+            };
+                scroll.onclick= function()
+            {
+            window.scrollTo(0,0);
+            };
+
     // Show Hidden Items From Work
 
     $('.show-more').click(function () {
